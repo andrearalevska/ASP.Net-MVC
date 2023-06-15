@@ -1,0 +1,10 @@
+﻿@model List<Order>
+
+<h2>List of Orders:</h2>
+
+<ul>
+    @foreach (Order o in @Model)
+    {
+        <li>Order number: @o.Id, Price @o.Price</li>
+    }
+</ul>
