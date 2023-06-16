@@ -1,0 +1,14 @@
+﻿@using ClassCode.ViewModels;
+@model OrderDetailsViewModel;
+
+<h2>@ViewData["Title"]</h2>
+
+<p>@Model.UserFullName</p>
+<p>Order: @Model.PizzaName</p>
+<p>Total Price: @Model.OrderPrice</p>
+<p>Payment Method: @Model.PaymentMethod</p>
+
+<p>User phone number: @ViewBag.User.PhoneNumber </p>
+
+<p>@ViewData["DateTime"]</p>
+
