@@ -1,0 +1,19 @@
+﻿@using SEDC.PizzaApp_Homework2.ViewModels;
+@model List<PizzaViewModel>
+
+<h2>Pizzas:</h2>
+
+<table border="1">
+    <tr>
+        <td>No.</td>
+        <td>Pizza</td>
+    </tr>
+
+    @foreach (PizzaViewModel pizza in @Model)
+    {
+        <tr>
+            <td>@pizza.Id</td>
+            <td>@pizza.Name</td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,20 @@
+﻿@using SEDC.PizzaApp_Homework2.ViewModels;
+@model PizzaViewModel 
+
+<h2>Pizza details:</h2>
+
+<p>@($"{Model.Id}. {Model.Name}")</p>
+<p>Pizza size: @Model.PizzaSize</p>
+
+@{
+    if (@Model.HasExtras)
+    {
+        <p>Price: @Model.Price</p>
+        <p>Price with extras: @(Model.Price + 10)</p>
+    }
+
+    else
+    {
+        <p>Price: @Model.Price</p>
+    }
+}

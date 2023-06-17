@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\SEDC.PizzaApp_Homework2.props" />
+</Project>
