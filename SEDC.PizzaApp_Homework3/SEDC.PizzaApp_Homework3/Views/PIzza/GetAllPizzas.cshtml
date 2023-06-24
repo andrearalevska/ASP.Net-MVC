@@ -1,0 +1,14 @@
+﻿@using SEDC.PizzaApp_Homework3.ViewModels;
+﻿
+@model List<PizzaViewModel>
+
+
+<h2>Pizzas:</h2>
+
+<ol>
+    @foreach(PizzaViewModel pizza in @Model)
+    {
+        <li>@Html.Partial("~/Views/Shared/Partials/_PizzaDetailsPartial.cshtml", pizza)</li>
+    }
+
+</ol>

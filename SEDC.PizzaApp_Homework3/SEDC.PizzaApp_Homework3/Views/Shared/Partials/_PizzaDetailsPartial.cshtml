@@ -1,0 +1,20 @@
+﻿@using SEDC.PizzaApp_Homework3.ViewModels;
+@model PizzaViewModel
+
+<p>Pizza: @Model.PizzaName</p>
+<p>Price: @Model.PizzaPrice</p>
+
+@{
+    string message = "This pizza is on promotion.";
+    string secondMessage = "This pizza is not on promotion";
+
+
+    if (Model.IsPromotion)
+    {
+        <h4>@message</h4>
+    }
+    else
+    {
+        <h4>@secondMessage</h4>
+    }
+}

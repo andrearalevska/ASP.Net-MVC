@@ -1,0 +1,14 @@
+﻿@using SEDC.PizzaApp_Homework3.ViewModels;
+@model List<UserViewModel>
+
+<h4>Users:</h4>
+<ol>
+    @foreach (UserViewModel userViewModel in @Model)
+    {
+        <li>@userViewModel.UserFullName</li>
+    }
+</ol>
+
+
+
+
